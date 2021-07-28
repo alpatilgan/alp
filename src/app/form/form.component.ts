@@ -11,5 +11,5 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  dombik=new Date()
 }
