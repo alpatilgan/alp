@@ -10,6 +10,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FootballComponent } from './football/football.component';
 import { FormComponent } from './form/form.component';
 import { VideoComponent } from './video/video.component';
+import { WeatherComponent } from './weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { VideoComponent } from './video/video.component';
     AboutComponent,
     FootballComponent,
     FormComponent,
-    VideoComponent
+    VideoComponent,
+    WeatherComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
